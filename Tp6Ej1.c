@@ -4,10 +4,12 @@
 void inicialiarVector(int vec[], int n);
 
 int main(){
-    int vec[15], acum = 0, prod = 1, cantElem = 15;
+    int vec[15], acum = 0, prod = 1;
 
-    inicialiarVector(vec[cantElem], cantElem);
-    for(int i = 0; i < cantElem; i++){
+    for(int i = 0; i < 15; i++){
+        printf("Ingrese un valor: ");
+        scanf("%d", &vec[i]);
+
         acum += vec[i];
         prod *= vec[i];
     }
@@ -21,9 +23,3 @@ int main(){
     return 0;
 }
 
-void inicialiarVector(int vec[], int n){
-    for(int i = 0; i < n; i++){
-    printf("Ingrese un valor: ");
-    scanf("%d", &vec[i]);
-    }
-}
