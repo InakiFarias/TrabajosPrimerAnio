@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void inicialiarVector(int vec[], int n);
-
 int main(){
     int vec[15], acum = 0, prod = 1;
 

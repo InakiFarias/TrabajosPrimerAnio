@@ -12,19 +12,19 @@ int main(){
         scanf("%d", &antiguedad);
         switch (cat){
             case 1: 
-            contCat[0]++;
+            contCat[cat - 1]++;
             sueldo = 1500 + (100 * antiguedad);
-            acumSueldos[0] += sueldo;
+            acumSueldos[cat - 1] += sueldo;
             break;
             case 2: 
-            contCat[1]++;
+            contCat[cat - 1]++;
             sueldo = 2000 + (100 * antiguedad);
-            acumSueldos[1] += sueldo;
+            acumSueldos[cat - 1] += sueldo;
             break;
             case 3:
-            contCat[2]++;
+            contCat[cat - 1]++;
             sueldo = 2500 + (100 * antiguedad);
-            acumSueldos[2] += sueldo;
+            acumSueldos[cat - 1] += sueldo;
             break;
             default:
             printf("Categoria no valida");
